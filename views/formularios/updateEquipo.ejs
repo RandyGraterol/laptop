@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/stylesForm/stylesForm.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actualizar Equipo</h1>
+        <form action="/updateEquipoPost/<%=e.id%>" method="POST" class="formulario">
+
+            <div class="inputD">
+                <label for="marca">marca</label>
+                <input type="text" id="marca" name="marca" value='<%=e.marca%>'>
+            </div>
+            <div class="inputD">
+                <label for="modelo">modelo</label>
+                <input type="text" id="modelo" name="modelo" value='<%=e.modelo%>'>
+            </div>
+            <div class="inputD">
+                <label for="catalogo">catalogo</label>
+                <input type="text" id="catalogo" name="catalogo" value='<%=e.catalogo%>'>
+            </div>
+            <div class="inputD">
+                <label for="descripcion">descripcion</label>
+                <input type="text" id="descripcion" name="descripcion" value='<%=e.descripcion%>'>
+            </div>
+
+            <div class="inputD">
+
+                <label for="cantidad">cantidad</label>
+                <input type="text" id="cantidad" name="cantidad" value='<%=e.cantidad%>'>
+            </div>
+
+            <button type="submit">Actualizar</button>
+
+        </form>
+    </div>
+</body>
+</html>
